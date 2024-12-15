@@ -1,0 +1,188 @@
+:root {
+    --width: 55px;
+    --height: 13.8px;
+}
+
+* {
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Fan {
+    background-color: gray;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    z-index: 3;
+    /* transform: rotate(0deg); */
+    border: 1px solid black;
+}
+
+.mid {
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.axis {
+    background-color: black;
+    border-radius: 50%;
+    width: 2px;
+    height: 2px;
+}
+
+.wing1 {
+    border: 1px solid black;
+    width: var(--width);
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    height: var(--height);
+    background-color: gray;
+    /* position: relative;
+top: 23px;
+left: 48px; */
+    position: absolute;
+    left: 39px;
+    bottom: 14px;
+    transform-origin: 2px 7px;
+    transform: rotate(0deg);
+}
+
+.wing2 {
+    border: 1px solid black;
+    width: var(--width);
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    height: var(--height);
+    transform-origin: 2% 7%;
+    transform: rotate(120deg);
+    background-color: gray;
+    top: 40px;
+    left: 14.5px;
+    /* position: relative;
+top: 37px;
+left: 22px; */
+    position: absolute;
+}
+
+.wing3 {
+    border: 1px solid black;
+    width: var(--width);
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    height: var(--height);
+    transform: rotate(240deg);
+    background-color: gray;
+    position: absolute;
+    transform-origin: 2px 7px;
+    bottom: 30px;
+    left: 8px;
+}
+
+.button {
+    background-color: blue;
+}
+
+#bt {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    top: 120px;
+    left: 23px;
+    padding: 0;
+    border-radius: 3px;
+    /* border: black; */
+}
+
+.controller {
+    position: relative;
+    top: 120px;
+    width: 7px;
+    height: 6px;
+    border-radius: 100%;
+    padding: 0;
+    font-size: 3px;
+    border: 0.9px dotted black;
+    outline: 1px solid black;
+    outline-offset: 0.4px;
+    background-color: rgb(138, 138, 199);
+}
+
+
+/* Add this class to rotate the element */
+
+.On-Off {
+    background-color: rgb(211, 194, 159);
+}
+
+
+/* @keyframes fspin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+} */
+
+.rotate-2 {
+    animation: ffspin 0.5s linear infinite;
+}
+
+@keyframes ffspin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Add this class to rotate the element */
+
+.rotate2 {
+    animation: spin 1s linear forwards;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(60deg);
+    }
+}
+
+.rotate3 {
+    animation: spin2 1s linear forwards;
+}
+
+@keyframes spin2 {
+    from {
+        transform: rotate(60deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}

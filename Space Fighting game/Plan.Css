@@ -1,0 +1,80 @@
+* {
+    font-size: 5px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+.plans {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: green;
+}
+
+.hurdles {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: purple;
+}
+
+.Plan {
+    background-color: rgb(12, 12, 80);
+    width: 30px;
+    height: 28px
+}
+
+.controler {
+    position: relative;
+    top: 50px;
+    left: 130px;
+    border: 1px solid rgb(56, 219, 54);
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: rgb(19, 195, 201);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: rgb(39, 105, 219);
+    border-radius: 5px;
+    border: 0.8px solid rgb(255, 255, 255);
+    width: 2px;
+    height: 3px;
+    padding: 2px;
+    font-size: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button1 {}
+
+.button2 {
+    position: relative;
+    top: 12px;
+}
+
+.button3 {
+    align-self: flex-start;
+    position: relative;
+    bottom: 3.1px;
+    left: 2px;
+}
+
+.button4 {
+    align-self: flex-end;
+    position: relative;
+    bottom: 8.5px;
+    right: 2px;
+}

@@ -1,0 +1,67 @@
+.bulb {
+    width: 20vw;
+    height: 20vw;
+    display: flex;
+    background-color: rgb(30, 174, 136);
+    filter: brightness(1);
+    border-radius: 17px;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 0, 9);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* background: linear-gradient(rgb(46, 164, 210), rgb(45, 156, 199), rgb(44, 156, 200), rgb(79, 10, 10), rgb(79, 10, 10), green, green); */
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 54vw;
+    height: 50px;
+    background-color: brown;
+    /* background-color: rgb(33, 184, 98); */
+    color: white;
+    transform: rotateX(1000deg);
+}
+
+#btc {
+    text-align: center;
+    position: relative;
+    left: 33.7px;
+    top: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid yellow;
+    border-radius: 6px;
+}
+
+body {
+    background-color: rgb(30, 174, 136);
+}
+
+.object {
+    position: relative;
+    top: 5px;
+    left: 80px;
+    width: 100px;
+    height: 70px;
+    background-color: blue;
+    /* Color of the object */
+}
+
+.object::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    /* Adjust this value to control brightness from left to right */
+    height: 100%;
+    background: linear-gradient(to left, rgba(15, 15, 241, 0.616), rgb(57, 57, 234), rgb(104, 104, 239));
+    /* Adjust the color and opacity here */
+}
